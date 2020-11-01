@@ -34,7 +34,7 @@ def main():
                 fib[0] = second
                 fib[1] = first + second
                 x += first #All the values are being added to x.
-            Label(win, text = x).grid(row = 6, column = 0) #The sum of the sequence is ooutputted.
+            Label(win, text = x).grid(row = 6, column = 0) #The sum of the sequence is outputted.
             
         #If the user does not enter a value or if they enter a string, nothing will happen and no error will be shown.
         except ValueError:
@@ -61,7 +61,7 @@ def main():
     win.geometry("306x250") #This specifies the size of the surface
     win.title("Fibbing") #Title of the window
 
-
+    #Label(surface, text = "message", font = size, fg = "colour", bg = "colour").grid(row, column, padx, pady)
     Label(win, text = "How many places do you want to generate?", font = 12).grid(pady = 10) 
     num = Entry(win, width = 30) # "Entry(surface, width)" allows the user to enter a value
     num.grid() # Place the widget on the surface
